@@ -1,9 +1,17 @@
-github: [metadata]
-encoding: UTF-8
+# Site settings
+title: Kaushik Kanetkar - blog
+email: kaushik.kanetkar@gmail.com
+description: "Let the machines learn"
+baseurl: ""
+url: "http://kaushikkanetkar.github.io"
+github_username:  kaushikkanetkar
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+highlighter: rouge
 kramdown:
   input: GFM
-  hard_wrap: false
-future: true
-jailed: false
-theme: jekyll-theme-primer
-gfm_quirks: paragraph_end
+  auto_ids: true
+  syntax_highlighter: rouge
