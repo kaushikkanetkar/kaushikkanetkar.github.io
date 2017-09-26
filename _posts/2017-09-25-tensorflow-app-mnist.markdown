@@ -1,8 +1,8 @@
 ---
 layout: post
 comments: true
-title:  "An App to Recognize handwritten digits"
-excerpt: "This is an Android application I wrote to classify handwritten digits with the help of the MNIST dataset and ConvNets"
+title:  "An App to recognize handwritten digits"
+excerpt: "This is an Android application I wrote to classify handwritten digits with the help of the MNIST dataset and ConvNets."
 date:   2017-03-01
 ---
 
