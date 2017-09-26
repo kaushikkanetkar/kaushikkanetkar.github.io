@@ -29,3 +29,10 @@ We'll store this trained file which has all the weights - that activate the comp
 
 Here I started by first writing an Android application with live camera feed displayed in a small window. I have written a bunch of apps in the past, it's always fun, reminds me of the [Snake game](https://goo.gl/UJRkrp) I wrote that made it to the PlayStore. The camera part was a little tricky due to the alignments and integration of the Camera API into my native app code.
 
+Next up was to integrate the incoming camera feed and give them as inputs to the trained model. There were two parts to this. One was to translate the incoming feed into images and their respective formats and to prep them in the core app code. Second was to create a small adapter module code to interact with the trained model file. I felt it was easier to have the integration split into two parts as above, just to keep it clean and easier to debug.
+
+Once I verified that all this was working fine, and I was sending the images in the right format and getting some classified output back from tensorflow, it was my favorite part, to fine tune and process the image.
+
+## Image Processing
+
+
