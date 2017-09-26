@@ -18,7 +18,7 @@ It contains a training set of 60,000 examples and a test set of 10,000 examples.
 
 <div class="imgcap">
 <div style="text-align:center;"><img src="/assets/mnist_digits.png"></div>
-<div class="thecap" style="text-align:justify">Image taken from tensorflow.org</div>
+<div class="thecap" style="text-align:center">Image taken from tensorflow.org</div>
 </div>
 
 - The images in the MNIST database are grayscale and their size is 28x28. Good enough for beginners to learn and debug.
@@ -47,7 +47,7 @@ Once I verified that I was sending the images in the right format and getting so
 
 After denoising the images, and integrating the input feed into the tensorflow API, I was able to recognize the handwritten digits as seen by the camera of my phone.
 
-<div style="text-align:center;"><img src="/assets/screenshot.png"></div>
+<div style="max-width:49%; height:400px;"><img src="/assets/screenshot.png"></div>
 
 > Youtube link of the application -- [Demo](https://goo.gl/0FNvXL)
 
