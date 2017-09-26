@@ -25,7 +25,7 @@ It contains a training set of 60,000 examples and a test set of 10,000 examples.
 
 - I used Tensorflow to train the images in the database using a modified version of the LeNet 5 model. This ConvNet gave me 99.21%. On tuning the hyperparameters, I was able to get a 0.1 % bump occasionally, but I was fine with the previous results. A simple logistic regression model gave me 91.3 % accuracy, which is fine, but isn't that great when I know that ConvNets gave me ~99%.
 
-> We'll store this trained file which has all the weights - that activate the computation graphs.
+> This trained file has all the weights of neurons for the computational graph. We'll need it later.
 
 
 ## The Android App
