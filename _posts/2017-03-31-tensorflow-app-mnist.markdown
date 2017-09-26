@@ -35,7 +35,7 @@ Once I verified that I was sending the images in the right format and getting so
 
 ## Image Processing
 
-- This wass one of the main reasons I developed this application. With the ~99% performance on MNIST, I could have been happy and tried out a few more images using a photo editor software. But I wanted to try out a real world integration of the usage, end to end.
+- This was one of the main reasons I developed this application. With the ~99% performance on MNIST, I could have been happy and tried out a few more images using a photo editor software. But I wanted to try out a real world integration of the usage, end to end.
 
 - Basic images captured by the camera in a normal lighted environment have a lot of noise. This becomes really difficult to convert your grayscale image into binary format. Infact one could actually use some of these noisy binary images, throw them into the training set and re-train. Meanwhile, I used a bunch of image morphological techniques and coded them myself without using any image processing library. Since it was a grayscale image, the thresholding was done using Otsu's algorithm, which was reliable.
 
