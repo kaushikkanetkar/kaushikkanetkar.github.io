@@ -42,5 +42,5 @@ Once I verified that I was sending the images in the right format and getting so
 
 After denoising the images, and integrating the input feed into the tensorflow API, I was able to recognize the handwritten digits as seen by the camera of my phone.
 
-Youtube link of the application -> [Demo](https://goo.gl/0FNvXL)
+Youtube link of the application -- [Demo](https://goo.gl/0FNvXL)
 
