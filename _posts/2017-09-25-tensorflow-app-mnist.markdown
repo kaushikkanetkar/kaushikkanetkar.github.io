@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title:  "An App to Recognize handwritten digits"
-excerpt: "This is an Android app that uses a pre-trained model to recognize handwritten digits using live-feed from the camera. I used the MNIST dataset"
+excerpt: "This is an Android application I wrote to classify handwritten digits with the help of the MNIST dataset and ConvNets"
 date:   2017-03-01
 ---
 
