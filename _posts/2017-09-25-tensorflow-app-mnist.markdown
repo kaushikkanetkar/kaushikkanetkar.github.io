@@ -23,7 +23,7 @@ I used Tensorflow to train the images in the database using the LeNet 5 model. T
 We'll store this trained file which has all the weights - that activate the computation graphs.
 
 
-##The Android App
+## The Android App
 
 **Camera API**
 
