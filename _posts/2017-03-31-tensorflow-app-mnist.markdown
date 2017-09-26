@@ -47,7 +47,7 @@ Once I verified that I was sending the images in the right format and getting so
 
 After denoising the images, and integrating the input feed into the tensorflow API, I was able to recognize the handwritten digits as seen by the camera of my phone.
 
-<div style="max-width:49%; height:400px;"><img src="/assets/screenshot.png"></div>
+<div><img src="/assets/screenshot.png" style="max-width:49%; height:400px;"></div>
 
 > Youtube link of the application -- [Demo](https://goo.gl/0FNvXL)
 
