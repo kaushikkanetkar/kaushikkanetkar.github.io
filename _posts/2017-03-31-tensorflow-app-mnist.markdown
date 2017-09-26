@@ -16,9 +16,9 @@ I developed an application that recognizes handwritten digits using the live cam
 - The MNIST database is a relatively famous dataset of handwritten digits hosted on Yann LeCun's [homepage](http://http://yann.lecun.com/exdb/mnist/).
 It contains a training set of 60,000 examples and a test set of 10,000 examples. This is actually a subset of NIST databse. 
 
+<div class="imgcap">
 <div style="text-align:center;"><img src="/assets/mnist_digits.png"></div>
-</div>
-<div class="thecap">Image taken from tensorflow.org</div>
+<div class="thecap" style="text-align:justify">Image taken from tensorflow.org</div>
 </div>
 
 - The images in the MNIST database are grayscale and their size is 28x28. Good enough for beginners to learn and debug.
@@ -46,6 +46,8 @@ Once I verified that I was sending the images in the right format and getting so
 
 
 After denoising the images, and integrating the input feed into the tensorflow API, I was able to recognize the handwritten digits as seen by the camera of my phone.
+
+<div style="text-align:center;"><img src="/assets/screenshot.png"></div>
 
 > Youtube link of the application -- [Demo](https://goo.gl/0FNvXL)
 
