@@ -23,6 +23,9 @@ I used Tensorflow to train the images in the database using the LeNet 5 model. T
 We'll store this trained file which has all the weights - that activate the computation graphs.
 
 
-**The Android App**
+##The Android App
+
+**Camera API**
 
 Here I started by first writing an Android application with live camera feed displayed in a small window. I have written a bunch of apps in the past, it's always fun, reminds me of the [Snake game](https://goo.gl/UJRkrp) I wrote that made it to the PlayStore. The camera part was a little tricky due to the alignments and integration of the Camera API into my native app code.
+
