@@ -81,7 +81,7 @@ So, I used the DNNClassifier and built a 3-layer network. After doing the usual 
 
 Here we go, quite an improvement.
 
-**Deep and Wide model**
+**Deep and Wide model**  
 Tensorflow has another classifier called "Deep and Wide".
 This model actually combines the LinearClassifier and DNNClassifier to create a DNNLinearCombinedClassifier. Focus here is to use benefits of both models.
 
