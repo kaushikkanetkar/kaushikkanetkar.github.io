@@ -97,3 +97,8 @@ I was able to get a slightly better accuracy on the "Deep and Wide" model as com
 
 The code for this is on my [github.](https://github.com/kaushikkanetkar/titanic-kaggle) 
 
+## Issues
+
+- Increasing the no. of hidden layers and units per layer bumped up the training accuracy to 94%, but it reduced the test set accuracy to 78%. A complex model generated high variance and made the model to overfit.
+- Decreasing the no. of units per layer got me a training and test set accuracy of ~82%.
+
