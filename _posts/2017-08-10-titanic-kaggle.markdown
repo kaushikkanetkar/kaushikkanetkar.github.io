@@ -56,7 +56,7 @@ Here's what I deduced from the features that are affecting the chances of surviv
 
 I split the training data (892) into "train" and "test" sets in a 80-20 split using Python's sklearn.
 
-# Training and Testing
+## Training and Testing
 
 For the features to do the job, it's crucial that we design the model in the right way. We need to make sure our model can extract the signals efficently.
 
@@ -64,10 +64,8 @@ This is a binary classification problem, so our "Y" will have 2 classes (0 and 1
 
 > Framework used - Tensorflow
 
-**LinearClassifier - "Wide" model**
-
-*Logistic regression*
-
+**LinearClassifier - "Wide" model** 
+*Logistic regression* 
 First option is to use a logistic regression model (linear classifier). It's faster and we don't need to worry much about hyperparameter tuning.
 Results from LinearClassifier:
 - Accuracy on training set = 82%
@@ -75,10 +73,8 @@ Results from LinearClassifier:
 
 One drawback on linear classifiers is that they don't memorize the interactions of features with each other. For example, in our dataset we know that being a male and in Pclass 1 has a lower chance of survival - (Interaction between "Sex" and "PClass"). The other problem is that linear classifiers don't generalize feature interactions that well.
 
-**DNNClassifier - "Deep" model**
-
-*Neural Networks*
-
+**DNNClassifier - "Deep" model**  
+*Neural Networks*  
 Deep models can generalize feature interactions that haven't appeared in the training set.
 So, I used the DNNClassifier and built a 3-layer network. After doing the usual hyperparameter tuning, these were the results I got:
 - Accuracy on training set = 89%
@@ -103,7 +99,7 @@ I was able to get a slightly better accuracy on the "Deep and Wide" model as com
 
 The code for this is on my [github.](https://github.com/kaushikkanetkar/titanic-kaggle) 
 
-# Issues
+## Issues
 
 - Increasing the no. of hidden layers and units per layer bumped up the training accuracy to 94%, but it reduced the test set accuracy to 78%. A complex model generated high variance and made the model to overfit.
 - Decreasing the no. of units per layer got me a training and test set accuracy of ~82%.
