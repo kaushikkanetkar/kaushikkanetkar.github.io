@@ -15,7 +15,7 @@ The dataset provided on Kaggle:
 - Training (892)
 - Test (419)
 
-Labels have been provided for the training data set (0=Didn't Survive, 1=Survived). 
+Labels have been provided for the training data set (0=Didn't Survive, 1=Survived).
 Labels have not been provided for the test data set.
 
 ## Feature Engineering
