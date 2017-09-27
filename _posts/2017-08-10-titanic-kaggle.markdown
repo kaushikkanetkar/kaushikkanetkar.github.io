@@ -10,8 +10,7 @@ Link to the question on Kaggle website - [here.](https://www.kaggle.com/c/titani
 
 ## Dataset
 
-The dataset provided on Kaggle:
-
+The dataset provided on Kaggle:  
 - Training (892)
 - Test (419)
 
@@ -22,7 +21,7 @@ Labels have not been provided for the test data set.
 
 It's important to decide what features get fed into the classifier. Well, we could just feed the features as-is but that might not give us a high accuracy.
 
-The features, as seen in the training set (X):
+The features, as seen in the training set (X):  
 - Pclass (Passenger Class - 1, 2, 3)
 - Full Name (including title)
 - Sex (Male or Female)
@@ -34,16 +33,16 @@ The features, as seen in the training set (X):
 - Cabin
 - Embarked (C, S or Q)
 
-Label (Y):
+Label (Y):  
 - Survived (0 or 1)
 
-Python is very powerful. Numpy, seaborn and pandas can help to:
+Python is very powerful. Numpy, seaborn and pandas can help to:  
 - Read CSVs
 - Plot graphs; because graphs and plots are always fun to see if a particular feature can give some signals.
 - Group features and co-relate with the label field (plot an engineered feature "x" v/s "Survived" field)
 - Analyze certain parts of the features, if not all (eg: just the title out of a name, or the length of a name)
 
-Here's what I deduced from the features that are affecting the chances of survival: (X_modified)
+Here's what I deduced from the features that are affecting the chances of survival: (X_modified)  
 - Age not known
 - Being a child (Age less than 9)
 - Family size (between 1 and 3 especially - increases survival)
@@ -64,8 +63,8 @@ This is a binary classification problem, so our "Y" will have 2 classes (0 and 1
 
 > Framework used - Tensorflow
 
-**LinearClassifier - "Wide" model** 
-*Logistic regression* 
+**LinearClassifier - "Wide" model**  
+* *Logistic regression*  
 First option is to use a logistic regression model (linear classifier). It's faster and we don't need to worry much about hyperparameter tuning.
 Results from LinearClassifier:
 - Accuracy on training set = 82%
@@ -74,7 +73,7 @@ Results from LinearClassifier:
 One drawback on linear classifiers is that they don't memorize the interactions of features with each other. For example, in our dataset we know that being a male and in Pclass 1 has a lower chance of survival - (Interaction between "Sex" and "PClass"). The other problem is that linear classifiers don't generalize feature interactions that well.
 
 **DNNClassifier - "Deep" model**  
-*Neural Networks*  
+> *Neural Networks*  
 Deep models can generalize feature interactions that haven't appeared in the training set.
 So, I used the DNNClassifier and built a 3-layer network. After doing the usual hyperparameter tuning, these were the results I got:
 - Accuracy on training set = 89%
