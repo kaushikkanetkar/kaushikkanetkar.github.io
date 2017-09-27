@@ -64,7 +64,7 @@ This is a binary classification problem, so our "Y" will have 2 classes (0 and 1
 > Framework used - Tensorflow
 
 **LinearClassifier - "Wide" model**  
-*Logistic regression*  
+== *Logistic regression* ==  
 First option is to use a logistic regression model (linear classifier). It's faster and we don't need to worry much about hyperparameter tuning.
 Results from LinearClassifier:
 - Accuracy on training set = 82%
