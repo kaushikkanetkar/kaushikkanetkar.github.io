@@ -83,7 +83,8 @@ So, I used the DNNClassifier and built a 3-layer network. After doing the usual 
 Here we go, quite an improvement.
 
 Tensorflow has another classifier called "Deep and Wide".
-This model actually combines the LinearClassifier and DNNClassifier to create a DNNLinearCombinedClassifier. Focus here is to use befits of both models.
+This model actually combines the LinearClassifier and DNNClassifier to create a DNNLinearCombinedClassifier. Focus here is to use benefits of both models.
+
 More details are presented in this [post](https://www.tensorflow.org/versions/r0.12/tutorials/wide_and_deep/)
 
 > One can make use of "crossed columns" to explicitly notify the classifier about a certain feature interaction. Idea behind this is to reduce feature engineering effort.
