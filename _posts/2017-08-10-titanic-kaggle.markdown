@@ -6,7 +6,7 @@ excerpt: "A binary classification problem to find out who would survive the Tita
 date:   2017-08-10
 ---
 
-Link to the actual question on Kaggle website - [here.](https://www.kaggle.com/c/titanic)
+Link to the question on Kaggle website - [here.](https://www.kaggle.com/c/titanic)
 
 ## Dataset
 
@@ -38,9 +38,9 @@ Label (Y):
 
 Python is very powerful. I used numpy, seaborn and pandas to:
 - Read CSVs
-- Plot graphs; because graphs and plots are always fun to see is a particular feature can give some signals.
-- Group features and co-relate with the label field (plot feature "x" v/s "Survived" field)
-- Analyze certain parts of the features, if not all (eg: just the title out of a name)
+- Plot graphs; because graphs and plots are always fun to see if a particular feature can give some signals.
+- Group features and co-relate with the label field (plot an engineered feature "x" v/s "Survived" field)
+- Analyze certain parts of the features, if not all (eg: just the title out of a name, or the length of a name)
 
 Here's what I deduced from the features that are affecting the chances of survival: (X_modified)
 - Age not known
@@ -85,13 +85,13 @@ Tensorflow has another classifier called "Deep and Wide".
 This model actually combines the LinearClassifier and DNNClassifier to create a DNNLinearCombinedClassifier. Focus here is to use befits of both models.
 More details are presented in this [post](https://www.tensorflow.org/versions/r0.12/tutorials/wide_and_deep/)
 
-> One can make sure of the new "crossed columns" to explicitly notify the classifier about a certain feature interaction. Idea behind this is to reduce feature engineering effort.
+> One can make use of "crossed columns" to explicitly notify the classifier about a certain feature interaction. Idea behind this is to reduce feature engineering effort.
 
 Results on the "Deep and Wide" model:
 - Accuracy on training set = 91%
 - Accuracy on test set = 84%
 
-So, I was able to get a slightly better accuracy on the "Deep and Wide" model as compared to the "Deep" model.
+I was able to get a slightly better accuracy on the "Deep and Wide" model as compared to the "Deep" model.
 
-Here's the [code.](https://github.com/kaushikkanetkar/titanic-kaggle) 
+The code for this is on my [github.](https://github.com/kaushikkanetkar/titanic-kaggle) 
 
