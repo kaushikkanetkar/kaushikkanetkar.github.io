@@ -64,10 +64,8 @@ This is a binary classification problem, so our "Y" will have 2 classes (0 and 1
 
 > Framework used - Tensorflow
 
-Classifiers:
-- LinearClassifier ("Wide" model)
-- DNNClassifier ("Deep" model)
-
+**LinearClassifier - "Wide" model**
+*Logistic regression*
 First option is to use a logistic regression model (linear classifier). It's faster and we don't need to worry much about hyperparameter tuning.
 Results from LinearClassifier:
 - Accuracy on training set = 82%
@@ -75,6 +73,8 @@ Results from LinearClassifier:
 
 One drawback on linear classifiers is that they don't memorize the interactions of features with each other. For example, in our dataset we know that being a male and in Pclass 1 has a lower chance of survival - (Interaction between "Sex" and "PClass"). The other problem is that linear classifiers don't generalize feature interactions that well.
 
+**DNNClassifier - "Deep" model**
+*Neural Networks*
 Deep models can generalize feature interactions that haven't appeared in the training set.
 So, I used the DNNClassifier and built a 3-layer network. After doing the usual hyperparameter tuning, these were the results I got:
 - Accuracy on training set = 89%
@@ -82,6 +82,7 @@ So, I used the DNNClassifier and built a 3-layer network. After doing the usual 
 
 Here we go, quite an improvement.
 
+**Deep and Wide model**
 Tensorflow has another classifier called "Deep and Wide".
 This model actually combines the LinearClassifier and DNNClassifier to create a DNNLinearCombinedClassifier. Focus here is to use benefits of both models.
 
