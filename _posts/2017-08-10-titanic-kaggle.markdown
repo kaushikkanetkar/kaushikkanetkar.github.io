@@ -73,7 +73,7 @@ Results from LinearClassifier:
 One drawback on linear classifiers is that they don't memorize the interactions of features with each other. For example, in our dataset we know that being a male and in Pclass 1 has a lower chance of survival - (Interaction between "Sex" and "PClass"). The other problem is that linear classifiers don't generalize feature interactions that well.
 
 **DNNClassifier - "Deep" model**  
-==*Neural Networks*==  
+== *Neural Networks* ==  
 Deep models can generalize feature interactions that haven't appeared in the training set.
 So, I used the DNNClassifier and built a 3-layer network. After doing the usual hyperparameter tuning, these were the results I got:
 - Accuracy on training set = 89%
