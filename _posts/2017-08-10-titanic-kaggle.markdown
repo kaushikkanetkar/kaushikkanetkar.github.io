@@ -37,7 +37,7 @@ The features, as seen in the training set (X):
 Label (Y):
 - Survived (0 or 1)
 
-Python is very powerful. I used numpy, seaborn and pandas to:
+Python is very powerful. Numpy, seaborn and pandas can help to:
 - Read CSVs
 - Plot graphs; because graphs and plots are always fun to see if a particular feature can give some signals.
 - Group features and co-relate with the label field (plot an engineered feature "x" v/s "Survived" field)
